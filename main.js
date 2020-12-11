@@ -11,6 +11,7 @@ export function onClientRequest(request) {
 }
 
 export function onClientResponse(request, response) {
+    console.log("I am totally going to set a header in onClientResponse");
     response.setHeader('X-Powered-By','Akamai EdgeWorkers');
     response.setHeader('test','2.5.1');
 }
