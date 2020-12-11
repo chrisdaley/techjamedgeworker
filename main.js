@@ -3,7 +3,7 @@ import {logger} from 'log';
 import {Cookies, SetCookie} from 'cookies';
 
 export function onClientRequest(request) {
-  
+  logger.log("I am totally going to set a header in onClientRequest");
   let cookies = new Cookies(request.getHeader('Cookie'));
   var cartCookie = cookies.get('cart');
   if (!cartCookie) {
