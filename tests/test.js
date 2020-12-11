@@ -13,8 +13,3 @@ test('no_op on missing cookie', () => {
     // should terminate and redirect
     assertEq(result.terminates, true);
 })
-
-
-test('example_test_failure', () => {
-    assertEq(false, false)
-})
