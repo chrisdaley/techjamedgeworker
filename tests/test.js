@@ -16,5 +16,5 @@ test('no_op on missing cookie', () => {
 
 
 test('example_test_failure', () => {
-    assertEq(true, false)
+    assertEq(false, false)
 })
