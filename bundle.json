@@ -1,0 +1,7 @@
+{
+    "edgeworker-version": "2.0",
+    "description" : "JSON",
+    "tests" : [
+        "tests/test.js"
+    ]
+}
