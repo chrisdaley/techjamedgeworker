@@ -2,6 +2,8 @@ test('terminates on cookie', () => {
     var result = onClientRequest({headers: {
         "Cookie": "cart=true",
     }});
+    
+    console.log("Testing a log statement");
 
     // should not terminate and redirect
     assertEq(result.terminates, false);
