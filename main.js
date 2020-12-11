@@ -3,6 +3,7 @@
 import {Cookies, SetCookie} from 'cookies';
 
 export function onClientRequest(request) {
+  console.log("I am totally going to set a header in onClientRequest");
   let cookies = new Cookies(request.getHeader('Cookie'));
   var cartCookie = cookies.get('cart');
   if (!cartCookie) {
@@ -17,8 +18,9 @@ export function onClientResponse(request, response) {
 }
 
 export function onOriginRequest(request) {
-
+  console.log("I am doing nothing in onOriginRequest");
 }
 
 export function onOriginResponse(request, response) {
+  console.log("I am pretty useless here.");
 }
