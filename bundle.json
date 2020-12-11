@@ -2,6 +2,7 @@
     "edgeworker-version": "2.0",
     "description" : "JSON",
     "tests" : [
-        "tests/test.js"
+        "tests/test.js",
+        "tests/tests2.js"
     ]
 }
