@@ -12,7 +12,7 @@ export function onClientRequest(request) {
 }
 
 export function onClientResponse(request, response) {
-    logger.log("I am totally going to set a header in onClientResponse");
+    logger.log("I am totally going to set a header in onClientResponse.");
     response.setHeader('X-Powered-By','Akamai EdgeWorkers');
     response.setHeader('test','2.5.1');
 }
